@@ -1,0 +1,100 @@
+{
+  "version": "0.0.1",
+  "keywords": [
+    "strapi",
+    "plugin",
+    "strapi-plugin",
+    "google-analytics",
+    "strapi-dashboard",
+    "analytics-dashboard",
+    "google-analytics-dashboard",
+    "strapi-plugin-google-analytics",
+    "strapi-plugin-google-analytics-dashboard",
+    "strapi plugin google analytics",
+    "strapi plugin analytics",
+    "strapi analytics",
+    "strapi ga4",
+    "GA4",
+    "chartjs",
+    "analytics",
+    "google"
+  ],
+  "type": "commonjs",
+  "exports": {
+    "./package.json": "./package.json",
+    "./strapi-admin": {
+      "types": "./dist/admin/src/index.d.ts",
+      "source": "./admin/src/index.ts",
+      "import": "./dist/admin/index.mjs",
+      "require": "./dist/admin/index.js",
+      "default": "./dist/admin/index.js"
+    },
+    "./strapi-server": {
+      "types": "./dist/server/src/index.d.ts",
+      "source": "./server/src/index.ts",
+      "import": "./dist/server/index.mjs",
+      "require": "./dist/server/index.js",
+      "default": "./dist/server/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "strapi-plugin build",
+    "watch": "strapi-plugin watch",
+    "watch:link": "strapi-plugin watch:link",
+    "verify": "strapi-plugin verify",
+    "test:ts:front": "run -T tsc -p admin/tsconfig.json",
+    "test:ts:back": "run -T tsc -p server/tsconfig.json"
+  },
+  "dependencies": {
+    "@strapi/design-system": "^2.0.0-rc.27",
+    "@strapi/icons": "^2.0.0-rc.27",
+    "chart.js": "^4.5.0",
+    "react-apexcharts": "^1.7.0",
+    "react-chartjs-2": "^5.3.0",
+    "react-intl": "^7.1.11"
+  },
+  "devDependencies": {
+    "@google-analytics/data": "^5.1.0",
+    "@strapi/sdk-plugin": "^5.3.2",
+    "@strapi/strapi": "^5.16.1",
+    "@strapi/typescript-utils": "^5.16.1",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "prettier": "^3.6.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.1",
+    "styled-components": "^6.1.19",
+    "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "@google-analytics/data": "^5.1.0",
+    "@strapi/sdk-plugin": "^5.3.2",
+    "@strapi/strapi": "^5.16.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.1",
+    "styled-components": "^6.1.19"
+  },
+  "strapi": {
+    "kind": "plugin",
+    "name": "strapi-google-analytics-dashboard",
+    "displayName": "Google Analytics",
+    "description": "A plug-and-play Google Analytics 4 dashboard for Strapi 5.x. No code required — just install, configure your credentials, and instantly start tracking GA metrics directly in your admin panel."
+  },
+  "name": "strapi-google-analytics-dashboard",
+  "description": "A plug-and-play Google Analytics 4 dashboard for Strapi 5.x. No code required — just install, configure your credentials, and instantly start tracking GA metrics directly in your admin panel.",
+  "license": "MIT",
+  "author": "Victor Olayemi <victorolayemi@users.noreply.github.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/victorolayemi/strapi-google-analytics-dashboard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/victorolayemi/strapi-google-analytics-dashboard/issues"
+  },
+  "homepage": "https://github.com/victorolayemi/strapi-google-analytics-dashboard#readme"
+}
