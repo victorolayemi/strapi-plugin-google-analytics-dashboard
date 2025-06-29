@@ -16,7 +16,7 @@
   </a>
 </p>
 
-<img src="./screenshots/charts.png" alt="Google Analytics Dashboard UI" style="border:1px solid #ddd; border-radius: 8px; max-width:100%; margin-top: 1em;" />
+<img src="https://github.com/victorolayemi/strapi-plugin-google-analytics-dashboard/blob/main/screenshots/charts.png" alt="Google Analytics Dashboard UI" style="border:1px solid #ddd; border-radius: 8px; max-width:100%; margin-top: 1em;" />
 
 <hr />
 
@@ -68,7 +68,7 @@ or
 
 📌 <strong>NOTE:</strong> You must have already set up Google Analytics 4 on your frontend app (e.g., with the <code>gtag.js</code> snippet) and collected some traffic.
 
-<img src="./screenshots/settings.png" alt="Google Analytics Dashboard UI" style="border:1px solid #ddd; border-radius: 8px; max-width:100%; margin-top: 1em;" />
+<img src="https://github.com/victorolayemi/strapi-plugin-google-analytics-dashboard/blob/main/screenshots/settings.png" alt="Google Analytics Dashboard UI" style="border:1px solid #ddd; border-radius: 8px; max-width:100%; margin-top: 1em;" />
 
 <hr />
 
